@@ -13,7 +13,7 @@ import { errorHandler } from "../utils/error.js";
    await newUser.save();
    res.status(201).json("User Created Successfully")
   } catch (error) {
-    next(errorHandler(500,'error from the error Handler Function'))
+    next(error)
   }
    
 
