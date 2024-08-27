@@ -1,5 +1,5 @@
 
-export  const errorHandler = (statusCode,message)=>{
+  const errorHandler = (statusCode,message)=>{
 
     const error = new Error();
 
@@ -9,3 +9,4 @@ export  const errorHandler = (statusCode,message)=>{
   return error
 
 }
+export default errorHandler
