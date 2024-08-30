@@ -43,7 +43,8 @@ const SignUp = () => {
   return (
     <div className="p-3 max-w-lg mx-auto">
       <h1 className="text-6xl text-center font-semibold my-4 font-serif">Sign Up</h1>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 border border-neutral-600 shadow-xl p-6 rounded-lg">
+      <label className='ml-4 mb-[-15px]'>Username :</label>
         <input
           type="text"
           placeholder="username"
@@ -52,6 +53,7 @@ const SignUp = () => {
           id="username"
           value={formData.username || ''}
         />
+         <label className='ml-4 mb-[-15px]'>Email :</label>
         <input
           type="email"
           placeholder="email"
@@ -60,6 +62,7 @@ const SignUp = () => {
           id="email"
           value={formData.email || ''}
         />
+         <label className='ml-4 mb-[-15px]'>Password :</label>
         <input
           type="password"
           placeholder="password"
