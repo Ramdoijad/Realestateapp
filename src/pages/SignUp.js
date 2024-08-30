@@ -33,6 +33,7 @@ const SignUp = () => {
         }
         setloading(false);
         seterror(null);
+        alert(`Sign Up successfull`)
         navigate('/signin')
         console.log(data);
        

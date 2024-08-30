@@ -4,7 +4,7 @@ import { Link ,useNavigate} from 'react-router-dom';
 import { signinStart,signinSuccess,signInfauilur } from '../redux/user/userSlice';
 const SignIn = () => {
   const [formData, setformData] = useState({});
-  const {loading,error}=useSelector((store)=>store.user)
+  const {loading,error}=useSelector((state)=> state.user)
    const dispatch = useDispatch()
 
   const navigate = useNavigate()
